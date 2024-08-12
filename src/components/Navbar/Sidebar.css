@@ -1,0 +1,52 @@
+/* src/Sidebar.css */
+@keyframes stripeAnimation {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+.sidebar {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: repeating-linear-gradient(
+    45deg,
+    #f70202,
+    #a11a1a 10px,
+    #3a0d0d 10px,
+    #f18888 20px
+  );
+  background-size: 200% 200%;
+  animation: stripeAnimation 8s linear infinite;
+  color: #fff;
+  padding: 15px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h2 {
+  color: #fff;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 15px 0;
+}
+
+.sidebar ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.sidebar ul li a:hover {
+  text-decoration: underline;
+}
